@@ -3,7 +3,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>
-        A Survey Form Built Using Only HTML and CSS
+        Survey Form Built with HTML and CSS | Home
     </title>
 
     <style>
@@ -39,8 +39,7 @@
             margin-bottom: 10px;
         }
 
-        /* Styling form-control input, 
-        select, textarea */
+        /* Styling form-control input, select, textarea */
         .form-control input,
         .form-control select,
         .form-control textarea {
@@ -52,8 +51,7 @@
             width: 95%;
         }
 
-        /* Styling form-control Radio 
-        button and Checkboxes */
+        /* Styling form-control Radio button and Checkboxes */
         .form-control input[type="radio"],
         .form-control input[type="checkbox"] {
             display: inline-block;
@@ -107,7 +105,7 @@
             </label>
 
             <!-- Input Type Text -->
-            <input type="text" id="name" 
+            <input type="text" id="name" name="Name" 
                    placeholder="Enter your name" required />
         </div>
 
@@ -117,7 +115,7 @@
             </label>
 
             <!-- Input Type Email-->
-            <input type="email" id="email" required 
+            <input type="email" id="email" name="Email" required 
                    placeholder="Enter your email" />
         </div>
 
@@ -127,7 +125,7 @@
             </label>
 
             <!-- Input Type Text -->
-            <input type="text" id="age" 
+            <input type="text" id="age" name="Age" 
                    placeholder="Enter your age" />
         </div>
 
@@ -137,7 +135,7 @@
             </label>
 
             <!-- Input Type Text -->
-            <input type="tel" id="phone" placeholder="Enter Your Phone Number">
+            <input type="tel" id="phone" name="Phone" placeholder="Enter Your Phone Number">
         </div>
 
         <div class="form-control">
@@ -193,65 +191,67 @@
             </label>
         </div>
 
+
         <div class="form-control">
             <label>Languages and Tech Skills Known
                 <small>(Check all that apply)</small>
             </label>
             <!-- Input Type Checkbox -->
             <label for="inp-1">
-                <input type="checkbox" name="inp">C
+                <input type="checkbox" value="C" id="inp-1" name="skills">C
                   </input>
               </label>
             <label for="inp-2">
-                <input type="checkbox" name="inp">C++
+                <input type="checkbox" value="C++" id="inp-2" name="skills">C++
                   </input>
             </label>
             <label for="inp-3">
-                <input type="checkbox" name="inp">C#
+                <input type="checkbox" value="C#" id="inp-3" name="skills">C#
                   </input>
             </label>
             <label for="inp-4">
-                <input type="checkbox" name="inp">Java
+                <input type="checkbox" value="Java" id="inp-4" name="skills">Java
                   </input>
             </label>
             <label for="inp-5">
-                <input type="checkbox" name="inp">Python
+                <input type="checkbox" value="Python" id="inp-5" name="skills">Python
                   </input>
             </label>
             <label for="inp-6">
-                <input type="checkbox" name="inp">JavaScript
+                <input type="checkbox" value="JavaScript" id="inp-6" name="skills">JavaScript
                   </input>
             </label>
             <label for="inp-7">
-                <input type="checkbox" name="inp">React
+                <input type="checkbox" value="react" id="inp-7" name="skills">React
                   </input>
             </label>
             <label for="inp-8">
-                <input type="checkbox" name="inp">Angular
+                <input type="checkbox" value="angular" id="inp-8" name="skills">Angular
                   </input>
             </label>
             <label for="inp-9">
-                <input type="checkbox" name="inp">Django
+                <input type="checkbox" value="django" id="inp-9" name="skills">Django
                   </input>
             </label>
             <label for="inp-10">
-                <input type="checkbox" name="inp">Spring
+                <input type="checkbox" value="Spring" id="inp-10" name="skills">Spring
                   </input>
             </label>
             <label for="inp-11">
-                <input type="checkbox" name="inp">Bootstrap
+                <input type="checkbox" value="Bootstrap" id="inp-11" name="skills">Bootstrap
                   </input>
             </label>
             <label for="inp-12">
-                <input type="checkbox" name="inp">SQL
+                <input type="checkbox" value="SQL" id="inp-12" name="skills">SQL
                   </input>
             </label>
             <label for="inp-13">
-                <input type="checkbox" name="inp">Swift
+                <input type="checkbox" value="Swift" id="inp-13" name="skills">Swift
                   </input>
             </label>
-            
         </div>
+        <!--  When the form is submitted, the server will receive the selected values under the key 'skills' -->
+
 
         <div class="form-control">
             <label for="comment">
